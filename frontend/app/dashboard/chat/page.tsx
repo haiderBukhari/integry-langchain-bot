@@ -105,7 +105,7 @@ const Page = () => {
             localStorage.setItem("integry-api", JSON.stringify(newLocalStorageData));
 
 
-            await axios.post(`https://integry-backend-5a77cd408b70.herokuapp.com/get-details`, {
+            await axios.post(`http://localhost:5000/get-details`, {
                 userId: storedData.userId,
                 appKey: storedData.appKey,
                 apiKey: storedData.apiKey,
